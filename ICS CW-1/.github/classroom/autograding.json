@@ -1,0 +1,678 @@
+{
+  "tests": [
+
+
+    {
+      "name": "1.1 C",
+      "setup": "echo 'computer science is nice' > task1.txt",
+      "run": "timeout 120 ./word_count",
+      "input": "",
+      "output": "4\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+  {
+      "name": "1.1 MIPS",
+      "setup": "echo 'computer science is nice' > task1.txt",
+      "run": "java -jar ./src/Mars.jar sm me src/t1_word_count.s",
+      "input": "",
+      "output": "4\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+
+  {
+      "name": "1.2 C",
+      "setup": "echo 'the quick brown fox jumps over the lazy dog' > task1.txt",
+      "run": "timeout 120 ./word_count",
+      "input": "",
+      "output": "9\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+  {
+      "name": "1.2 MIPS",
+      "setup": "echo 'the quick brown fox jumps over the lazy dog' > task1.txt",
+      "run": "java -jar ./src/Mars.jar sm me src/t1_word_count.s",
+      "input": "",
+      "output": "9\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+
+  {
+      "name": "1.3 C",
+      "setup": "echo 'uncharacteristically' > task1.txt",
+      "run": "timeout 120 ./word_count",
+      "input": "",
+      "output": "1\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+  {
+      "name": "1.3 MIPS",
+      "setup": "echo 'characteristically' > task1.txt",
+      "run": "java -jar ./src/Mars.jar sm me src/t1_word_count.s",
+      "input": "",
+      "output": "1\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+
+  {
+      "name": "1.4 C",
+      "setup": "echo 'this is a simple test for word counting in computer science there are no commas and only lowercase letters are used in this text for testing purposes lets see if the word count function can handle this correctly' > task1.txt",
+      "run": "timeout 120 ./word_count",
+      "input": "",
+      "output": "38\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+  {
+      "name": "1.4 MIPS",
+      "setup": "echo 'this is a simple test for word counting in computer science there are no commas and only lowercase letters are used in this text for testing purposes lets see if the word count function can handle this correctly' > task1.txt",
+      "run": "java -jar ./src/Mars.jar sm me src/t1_word_count.s",
+      "input": "",
+      "output": "38\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+
+  {
+      "name": "1.5 C",
+      "setup": "echo 'lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum vitae justo nec mi pellentesque viverra donec euismod vestibulum sapien eget eleifend morbi sit amet lorem non justo dictum posuere' > task1.txt",
+      "run": "timeout 120 ./word_count",
+      "input": "",
+      "output": "29\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+  {
+      "name": "1.5 MIPS",
+      "setup": "echo 'lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum vitae justo nec mi pellentesque viverra donec euismod vestibulum sapien eget eleifend morbi sit amet lorem non justo dictum posuere' > task1.txt",
+      "run": "java -jar ./src/Mars.jar sm me src/t1_word_count.s",
+      "input": "",
+      "output": "29\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+  },
+
+
+
+  {
+    "name": "2.1 C",
+    "setup": "echo 'computer science is nice' > task2.txt",
+    "run": "timeout 120 ./print_words",
+    "input": "",
+    "output": "computer\nscience\nis\nnice\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+{
+    "name": "2.1 MIPS",
+    "setup": "echo 'computer science is nice' > task2.txt",
+    "run": "java -jar ./src/Mars.jar sm me src/t2_print_words.s",
+    "input": "",
+    "output": "computer\nscience\nis\nnice\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+
+{
+    "name": "2.2 C",
+    "setup": "echo 'the quick brown fox jumps over the lazy dog' > task2.txt",
+    "run": "timeout 120 ./print_words",
+    "input": "",
+    "output": "the\nquick\nbrown\nfox\njumps\nover\nthe\nlazy\ndog\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+{
+    "name": "2.2 MIPS",
+    "setup": "echo 'the quick brown fox jumps over the lazy dog' > task2.txt",
+    "run": "java -jar ./src/Mars.jar sm me src/t2_print_words.s",
+    "input": "",
+    "output": "the\nquick\nbrown\nfox\njumps\nover\nthe\nlazy\ndog\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+
+{
+    "name": "2.3 C",
+    "setup": "echo 'uncharacteristically' > task2.txt",
+    "run": "timeout 120 ./print_words",
+    "input": "",
+    "output": "uncharacteristically\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+{
+    "name": "2.3 MIPS",
+    "setup": "echo 'uncharacteristically' > task2.txt",
+    "run": "java -jar ./src/Mars.jar sm me src/t2_print_words.s",
+    "input": "",
+    "output": "uncharacteristically\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+
+{
+    "name": "2.4 C",
+    "setup": "echo 'this is a simple test for word counting in computer science there are no commas and only lowercase letters are used in this text for testing purposes lets see if the word count function can handle this correctly' > task2.txt",
+    "run": "timeout 120 ./print_words",
+    "input": "",
+    "output": "this\nis\na\nsimple\ntest\nfor\nword\ncounting\nin\ncomputer\nscience\nthere\nare\nno\ncommas\nand\nonly\nlowercase\nletters\nare\nused\nin\nthis\ntext\nfor\ntesting\npurposes\nlets\nsee\nif\nthe\nword\ncount\nfunction\ncan\nhandle\nthis\ncorrectly\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+{
+    "name": "2.4 MIPS",
+    "setup": "echo 'this is a simple test for word counting in computer science there are no commas and only lowercase letters are used in this text for testing purposes lets see if the word count function can handle this correctly' > task2.txt",
+    "run": "java -jar ./src/Mars.jar sm me src/t2_print_words.s",
+    "input": "",
+    "output": "this\nis\na\nsimple\ntest\nfor\nword\ncounting\nin\ncomputer\nscience\nthere\nare\nno\ncommas\nand\nonly\nlowercase\nletters\nare\nused\nin\nthis\ntext\nfor\ntesting\npurposes\nlets\nsee\nif\nthe\nword\ncount\nfunction\ncan\nhandle\nthis\ncorrectly\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+
+{
+    "name": "2.5 C",
+    "setup": "echo 'lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum vitae justo nec mi pellentesque viverra donec euismod vestibulum sapien eget eleifend morbi sit amet lorem non justo dictum posuere' > task2.txt",
+    "run": "timeout 120 ./print_words",
+    "input": "",
+    "output": "lorem\nipsum\ndolor\nsit\namet\nconsectetur\nadipiscing\nelit\nvestibulum\nvitae\njusto\nnec\nmi\npellentesque\nviverra\ndonec\neuismod\nvestibulum\nsapien\neget\neleifend\nmorbi\nsit\namet\nlorem\nnon\njusto\ndictum\nposuere\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+{
+    "name": "2.5 MIPS",
+    "setup": "echo 'lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum vitae justo nec mi pellentesque viverra donec euismod vestibulum sapien eget eleifend morbi sit amet lorem non justo dictum posuere' > task2.txt",
+    "run": "java -jar ./src/Mars.jar sm me src/t2_print_words.s",
+    "input": "",
+    "output": "lorem\nipsum\ndolor\nsit\namet\nconsectetur\nadipiscing\nelit\nvestibulum\nvitae\njusto\nnec\nmi\npellentesque\nviverra\ndonec\neuismod\nvestibulum\nsapien\neget\neleifend\nmorbi\nsit\namet\nlorem\nnon\njusto\ndictum\nposuere\n",
+    "comparison": "exact",
+    "timeout": 10,
+    "points": 1
+},
+
+
+
+{
+  "name": "3.1 C",
+  "setup": "echo 'bob meets little mary and mary meets bob' > task3.txt",
+  "run": "timeout 120 ./unique_words",
+  "input": "",
+  "output": "1 bob\n2 meets\n3 little\n4 mary\n5 and\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "3.1 MIPS",
+  "setup": "echo 'bob meets little mary and mary meets bob' > task3.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t3_unique_words.s",
+  "input": "",
+  "output": "1 bob\n2 meets\n3 little\n4 mary\n5 and\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "3.2 C",
+  "setup": "echo 'the big brown bear and the little brown bear went fishing the big brown bear caught five fish while the little brown bear caught three fish' > task3.txt",
+  "run": "timeout 120 ./unique_words",
+  "input": "",
+  "output": "1 the\n2 big\n3 brown\n4 bear\n5 and\n6 little\n7 went\n8 fishing\n9 caught\n10 five\n11 fish\n12 while\n13 three\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "3.2 MIPS",
+  "setup": "echo 'the big brown bear and the little brown bear went fishing the big brown bear caught five fish while the little brown bear caught three fish' > task3.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t3_unique_words.s",
+  "input": "",
+  "output": "1 the\n2 big\n3 brown\n4 bear\n5 and\n6 little\n7 went\n8 fishing\n9 caught\n10 five\n11 fish\n12 while\n13 three\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "3.3 C",
+  "setup": "echo 'bananas bananas bananas and more bananas bananas everywhere bananas falling from the sky bananas in my dreams bananas on my mind bananas bananas bananas' > task3.txt",
+  "run": "timeout 120 ./unique_words",
+  "input": "",
+  "output": "1 bananas\n2 and\n3 more\n4 everywhere\n5 falling\n6 from\n7 the\n8 sky\n9 in\n10 my\n11 dreams\n12 on\n13 mind\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "3.3 MIPS",
+  "setup": "echo 'bananas bananas bananas and more bananas bananas everywhere bananas falling from the sky bananas in my dreams bananas on my mind bananas bananas bananas' > task3.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t3_unique_words.s",
+  "input": "",
+  "output": "1 bananas\n2 and\n3 more\n4 everywhere\n5 falling\n6 from\n7 the\n8 sky\n9 in\n10 my\n11 dreams\n12 on\n13 mind\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "3.4 C",
+  "setup": "echo 'in the land of giggles where giggles giggle gleefully giggling in the morning giggling by the sea giggle at the sunrise giggle at the moon giggles giggles giggles they all make your heart swoon giggle with the butterflies giggle with the bees giggle in the mountains giggle in the trees giggle with the flowers as they bloom in the spring giggles giggles giggles a joyous giggly thing so lets giggle together you and me my friend giggle til the laughter never seems to end for in the world of giggles where giggles abound giggles giggles pure happiness is found' > task3.txt",
+  "run": "timeout 120 ./unique_words",
+  "input": "",
+  "output": "1 in\n2 the\n3 land\n4 of\n5 giggles\n6 where\n7 giggle\n8 gleefully\n9 giggling\n10 morning\n11 by\n12 sea\n13 at\n14 sunrise\n15 moon\n16 they\n17 all\n18 make\n19 your\n20 heart\n21 swoon\n22 with\n23 butterflies\n24 bees\n25 mountains\n26 trees\n27 flowers\n28 as\n29 bloom\n30 spring\n31 a\n32 joyous\n33 giggly\n34 thing\n35 so\n36 lets\n37 together\n38 you\n39 and\n40 me\n41 my\n42 friend\n43 til\n44 laughter\n45 never\n46 seems\n47 to\n48 end\n49 for\n50 world\n51 abound\n52 pure\n53 happiness\n54 is\n55 found\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "3.4 MIPS",
+  "setup": "echo 'in the land of giggles where giggles giggle gleefully giggling in the morning giggling by the sea giggle at the sunrise giggle at the moon giggles giggles giggles they all make your heart swoon giggle with the butterflies giggle with the bees giggle in the mountains giggle in the trees giggle with the flowers as they bloom in the spring giggles giggles giggles a joyous giggly thing so lets giggle together you and me my friend giggle til the laughter never seems to end for in the world of giggles where giggles abound giggles giggles pure happiness is found' > task3.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t3_unique_words.s",
+  "input": "",
+  "output": "1 in\n2 the\n3 land\n4 of\n5 giggles\n6 where\n7 giggle\n8 gleefully\n9 giggling\n10 morning\n11 by\n12 sea\n13 at\n14 sunrise\n15 moon\n16 they\n17 all\n18 make\n19 your\n20 heart\n21 swoon\n22 with\n23 butterflies\n24 bees\n25 mountains\n26 trees\n27 flowers\n28 as\n29 bloom\n30 spring\n31 a\n32 joyous\n33 giggly\n34 thing\n35 so\n36 lets\n37 together\n38 you\n39 and\n40 me\n41 my\n42 friend\n43 til\n44 laughter\n45 never\n46 seems\n47 to\n48 end\n49 for\n50 world\n51 abound\n52 pure\n53 happiness\n54 is\n55 found\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+
+
+
+
+
+{
+  "name": "4.1 C",
+  "setup": "echo 'bob meets little mary and mary meets bob' > task4.txt",
+  "run": "timeout 120 ./compress",
+  "input": "",
+  "output": "1 2 3 4 5 4 2 1\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "4.1 MIPS",
+  "setup": "echo 'bob meets little mary and mary meets bob' > task4.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t4_compress.s",
+  "input": "",
+  "output": "1 2 3 4 5 4 2 1\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "4.2 C",
+  "setup": "echo 'the big brown bear and the little brown bear went fishing the big brown bear caught five fish while the little brown bear caught three fish' > task4.txt",
+  "run": "timeout 120 ./compress",
+  "input": "",
+  "output": "1 2 3 4 5 1 6 3 4 7 8 1 2 3 4 9 10 11 12 1 6 3 4 9 13 11\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "4.2 MIPS",
+  "setup": "echo 'the big brown bear and the little brown bear went fishing the big brown bear caught five fish while the little brown bear caught three fish' > task4.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t4_compress.s",
+  "input": "",
+  "output": "1 2 3 4 5 1 6 3 4 7 8 1 2 3 4 9 10 11 12 1 6 3 4 9 13 11\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "4.3 C",
+  "setup": "echo 'bananas bananas bananas and more bananas bananas everywhere bananas falling from the sky bananas in my dreams bananas on my mind bananas bananas bananas' > task4.txt",
+  "run": "timeout 120 ./compress",
+  "input": "",
+  "output": "1 1 1 2 3 1 1 4 1 5 6 7 8 1 9 10 11 1 12 10 13 1 1 1\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "4.3 MIPS",
+  "setup": "echo 'bananas bananas bananas and more bananas bananas everywhere bananas falling from the sky bananas in my dreams bananas on my mind bananas bananas bananas' > task4.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t4_compress.s",
+  "input": "",
+  "output": "1 1 1 2 3 1 1 4 1 5 6 7 8 1 9 10 11 1 12 10 13 1 1 1\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "4.4 C",
+  "setup": "echo 'in the land of giggles where giggles giggle gleefully giggling in the morning giggling by the sea giggle at the sunrise giggle at the moon giggles giggles giggles they all make your heart swoon giggle with the butterflies giggle with the bees giggle in the mountains giggle in the trees giggle with the flowers as they bloom in the spring giggles giggles giggles a joyous giggly thing so lets giggle together you and me my friend giggle til the laughter never seems to end for in the world of giggles where giggles abound giggles giggles pure happiness is found' > task4.txt",
+  "run": "timeout 120 ./compress",
+  "input": "",
+  "output": "1 2 3 4 5 6 5 7 8 9 1 2 10 9 11 2 12 7 13 2 14 7 13 2 15 5 5 5 16 17 18 19 20 21 7 22 2 23 7 22 2 24 7 1 2 25 7 1 2 26 7 22 2 27 28 16 29 1 2 30 5 5 5 31 32 33 34 35 36 7 37 38 39 40 41 42 7 43 2 44 45 46 47 48 49 1 2 50 4 5 6 5 51 5 5 52 53 54 55\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "4.4 MIPS",
+  "setup": "echo 'in the land of giggles where giggles giggle gleefully giggling in the morning giggling by the sea giggle at the sunrise giggle at the moon giggles giggles giggles they all make your heart swoon giggle with the butterflies giggle with the bees giggle in the mountains giggle in the trees giggle with the flowers as they bloom in the spring giggles giggles giggles a joyous giggly thing so lets giggle together you and me my friend giggle til the laughter never seems to end for in the world of giggles where giggles abound giggles giggles pure happiness is found' > task4.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t4_compress.s",
+  "input": "",
+  "output": "1 2 3 4 5 6 5 7 8 9 1 2 10 9 11 2 12 7 13 2 14 7 13 2 15 5 5 5 16 17 18 19 20 21 7 22 2 23 7 22 2 24 7 1 2 25 7 1 2 26 7 22 2 27 28 16 29 1 2 30 5 5 5 31 32 33 34 35 36 7 37 38 39 40 41 42 7 43 2 44 45 46 47 48 49 1 2 50 4 5 6 5 51 5 5 52 53 54 55\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+
+
+
+{
+  "name": "5.1 C",
+  "setup": "echo 'bob meets little mary and mary meets bob' > task5.txt",
+  "run": "timeout 120 ./compress_more",
+  "input": "",
+  "output": "1 2 little 3 and 3 2 1 \n1 bob\n2 meets\n3 mary\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "5.1 MIPS",
+  "setup": "echo 'bob meets little mary and mary meets bob' > task5.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t5_compress_more.s",
+  "input": "",
+  "output": "1 2 little 3 and 3 2 1 \n1 bob\n2 meets\n3 mary\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "5.2 C",
+  "setup": "echo 'the big brown bear and the little brown bear went fishing the big brown bear caught five fish while the little brown bear caught three fish' > task5.txt",
+  "run": "timeout 120 ./compress_more",
+  "input": "",
+  "output": "1 2 3 4 and 1 5 3 4 went fishing 1 2 3 4 6 five 7 while 1 5 3 4 6 three 7 \n1 the\n2 big\n3 brown\n4 bear\n5 little\n6 caught\n7 fish\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "5.2 MIPS",
+  "setup": "echo 'the big brown bear and the little brown bear went fishing the big brown bear caught five fish while the little brown bear caught three fish' > task5.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t5_compress_more.s",
+  "input": "",
+  "output": "1 2 3 4 and 1 5 3 4 went fishing 1 2 3 4 6 five 7 while 1 5 3 4 6 three 7 \n1 the\n2 big\n3 brown\n4 bear\n5 little\n6 caught\n7 fish\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "5.3 C",
+  "setup": "echo 'bananas bananas bananas and more bananas bananas everywhere bananas falling from the sky bananas in my dreams bananas on my mind bananas bananas bananas' > task5.txt",
+  "run": "timeout 120 ./compress_more",
+  "input": "",
+  "output": "1 1 1 and more 1 1 everywhere 1 falling from the sky 1 in 2 dreams 1 on 2 mind 1 1 1 \n1 bananas\n2 my\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "5.3 MIPS",
+  "setup": "echo 'bananas bananas bananas and more bananas bananas everywhere bananas falling from the sky bananas in my dreams bananas on my mind bananas bananas bananas' > task5.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t5_compress_more.s",
+  "input": "",
+  "output": "1 1 1 and more 1 1 everywhere 1 falling from the sky 1 in 2 dreams 1 on 2 mind 1 1 1 \n1 bananas\n2 my\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "5.4 C",
+  "setup": "echo 'in the land of giggles where giggles giggle gleefully giggling in the morning giggling by the sea giggle at the sunrise giggle at the moon giggles giggles giggles they all make your heart swoon giggle with the butterflies giggle with the bees giggle in the mountains giggle in the trees giggle with the flowers as they bloom in the spring giggles giggles giggles a joyous giggly thing so lets giggle together you and me my friend giggle til the laughter never seems to end for in the world of giggles where giggles abound giggles giggles pure happiness is found' > task5.txt",
+  "run": "timeout 120 ./compress_more",
+  "input": "",
+  "output": "1 2 land 3 4 5 4 6 gleefully 7 1 2 morning 7 by 2 sea 6 8 2 sunrise 6 8 2 moon 4 4 4 9 all make your heart swoon 6 10 2 butterflies 6 10 2 bees 6 1 2 mountains 6 1 2 trees 6 10 2 flowers as 9 bloom 1 2 spring 4 4 4 a joyous giggly thing so lets 6 together you and me my friend 6 til 2 laughter never seems to end for 1 2 world 3 4 5 4 abound 4 4 pure happiness is found \n1 in\n2 the\n3 of\n4 giggles\n5 where\n6 giggle\n7 giggling\n8 at\n9 they\n10 with\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "5.4 MIPS",
+  "setup": "echo 'in the land of giggles where giggles giggle gleefully giggling in the morning giggling by the sea giggle at the sunrise giggle at the moon giggles giggles giggles they all make your heart swoon giggle with the butterflies giggle with the bees giggle in the mountains giggle in the trees giggle with the flowers as they bloom in the spring giggles giggles giggles a joyous giggly thing so lets giggle together you and me my friend giggle til the laughter never seems to end for in the world of giggles where giggles abound giggles giggles pure happiness is found' > task5.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t5_compress_more.s",
+  "input": "",
+  "output": "1 2 land 3 4 5 4 6 gleefully 7 1 2 morning 7 by 2 sea 6 8 2 sunrise 6 8 2 moon 4 4 4 9 all make your heart swoon 6 10 2 butterflies 6 10 2 bees 6 1 2 mountains 6 1 2 trees 6 10 2 flowers as 9 bloom 1 2 spring 4 4 4 a joyous giggly thing so lets 6 together you and me my friend 6 til 2 laughter never seems to end for 1 2 world 3 4 5 4 abound 4 4 pure happiness is found \n1 in\n2 the\n3 of\n4 giggles\n5 where\n6 giggle\n7 giggling\n8 at\n9 they\n10 with\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+
+
+{
+  "name": "6.1.1 C",
+  "setup": "echo 'abracadabra' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "a 5\nb 2\nr 2\nc 1\nd 1\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.1.1 MIPS",
+  "setup": "echo 'abracadabra' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "a 5\nb 2\nr 2\nc 1\nd 1\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "6.1.2 C",
+  "setup": "echo 'bananas' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "a 3\nn 2\nb 1\ns 1\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.1.2 MIPS",
+  "setup": "echo 'bananas' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "a 3\nn 2\nb 1\ns 1\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "6.1.3 C",
+  "setup": "echo 'kdsfhgkdsjhgdfkjghdfjghdjkfg' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "d 5\ng 5\nf 4\nh 4\nj 4\nk 4\ns 2\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.1.3 MIPS",
+  "setup": "echo 'kdsfhgkdsjhgdfkjghdfjghdjkfg' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "d 5\ng 5\nf 4\nh 4\nj 4\nk 4\ns 2\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+
+
+
+
+{
+  "name": "6.2.1 C",
+  "setup": "echo 'abracadabra' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "a 5\nb 2\nr 2\nc 1\nd 1\ncdrba 11\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.2.1 MIPS",
+  "setup": "echo 'abracadabra' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "a 5\nb 2\nr 2\nc 1\nd 1\ncdrba 11\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "6.2.2 C",
+  "setup": "echo 'bananas' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "a 3\nn 2\nb 1\ns 1\nbsna 7\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.2.2 MIPS",
+  "setup": "echo 'bananas' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "a 3\nn 2\nb 1\ns 1\nbsna 7\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "6.2.3 C",
+  "setup": "echo 'kdsfhgkdsjhgdfkjghdfjghdjkfg' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "d 5\ng 5\nf 4\nh 4\nj 4\nk 4\ns 2\ngfhjksd 28\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.2.3 MIPS",
+  "setup": "echo 'kdsfhgkdsjhgdfkjghdfjghdjkfg' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "d 5\ng 5\nf 4\nh 4\nj 4\nk 4\ns 2\ngfhjksd 28\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+
+{
+  "name": "6.4.1 C",
+  "setup": "echo 'abracadabra' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "a 5\nb 2\nr 2\nc 1\nd 1\ncdrba 11\n10100110000100011010011\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.4.1 MIPS",
+  "setup": "echo 'abracadabra' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "a 5\nb 2\nr 2\nc 1\nd 1\ncdrba 11\n10100110000100011010011\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "6.4.2 C",
+  "setup": "echo 'bananas' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "a 3\nn 2\nb 1\ns 1\nbsna 7\n0001011011001\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.4.2 MIPS",
+  "setup": "echo 'bananas' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "a 3\nn 2\nb 1\ns 1\nbsna 7\n0001011011001\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+
+{
+  "name": "6.4.3 C",
+  "setup": "echo 'kdsfhgkdsjhgdfkjghdfjghdjkfg' > task6.txt",
+  "run": "timeout 120 ./huffman",
+  "input": "",
+  "output": "d 5\ng 5\nf 4\nh 4\nj 4\nk 4\ns 2\ngfhjksd 28\n1001110100101000010011101011010000110011000110000101100101100001011011100001000\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+},
+{
+  "name": "6.4.3 MIPS",
+  "setup": "echo 'kdsfhgkdsjhgdfkjghdfjghdjkfg' > task6.txt",
+  "run": "java -jar ./src/Mars.jar sm me src/t6_huffman.s",
+  "input": "",
+  "output": "d 5\ng 5\nf 4\nh 4\nj 4\nk 4\ns 2\ngfhjksd 28\n1001110100101000010011101011010000110011000110000101100101100001011011100001000\n",
+  "comparison": "exact",
+  "timeout": 10,
+  "points": 1
+}
+
+
+
+  ]
+}

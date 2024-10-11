@@ -1,0 +1,16 @@
+cmake-build-debug/*
+CMakeCache.txt
+CTestTestfile.cmake
+CMakeFiles/*
+Testing/*
+Makefile
+list_runner
+cmake_install.cmake
+encrypt
+mibonacci
+mibonacciChecker
+miPrime
+reverseMibonacci
+build/*
+build
+*/.vscode
