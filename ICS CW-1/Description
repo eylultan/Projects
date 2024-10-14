@@ -1,2 +1,19 @@
-This is the first project I have completed in Introduction to Computer Systems course in year 2. It shows my coding skills in MIPS Assembly and 
-C coding language. 
+This is a project I have completed as part of a course "Introduction to Computer Systems" in year 2. 
+The goal of this is to develop proficiency in MIPS programming through a series of structured tasks, including word counting, unique word extraction, and implementing lossless text compression algorithms, culminating in the application of Huffman encoding.
+
+Project Requirements: 
+
+- Implement algorithms for word counting, printing unique words, and text compression using a dictionary.
+- Optimize compression by only replacing repeating words with their dictionary entries while preserving unique words.
+- Apply Huffman encoding to further compress text by building a frequency-based encoding scheme.
+- Ensure thorough testing and validation of solutions for both MIPS and C implementations.
+
+Language Used: C, MIPS Assembly 
+
+Project Approach (Implementation):
+- MIPS Programming: Develop algorithms to perform various text processing tasks using MIPS assembly language.
+- Word Count: Implement a function to count the number of words in a given input text.
+- Unique Word Extraction: Create an algorithm to extract and print unique words in the order of their first appearance.
+- Text Compression: Build a dictionary-based compression algorithm that replaces words with corresponding numerical codes.
+- Huffman Encoding: Implement Huffman encoding to compress text further by calculating character frequencies and constructing a binary tree.
+- Testing and Validation: Regularly test implementations against provided test cases to ensure accuracy and robustness.
