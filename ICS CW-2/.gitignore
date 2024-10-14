@@ -1,0 +1,4 @@
+.vscode
+./src/.DS_Store
+./src/sim
+./src/sim-dbg
